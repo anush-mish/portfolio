@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-image: linear-gradient(to bottom, rgba(26, 24, 32,0.9), rgba(37, 29, 79,0.9), rgba(43, 32, 129,0.9), rgba(48, 30, 181,0.9), rgba(55, 18, 235,0.9)),
+            url(https://wallpaperaccess.com/full/4391661.jpg);
+            color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            height:0.2vh;
+        }
+        .left{
+            font-size: 3rem;
+            /* color:deeppink; */
+            font-weight: 500;
+        }
+        nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #a13939; */
+   /* Background color of the navigation bar */
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 7px;
+  text-decoration: none;
+  transition: aqua 1s; /* Add smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #73dfed; /* Change text color on hover */
+}
+
+nav ul li a::before {
+  content: ''; /* Create a pseudo-element */
+  position: absolute; /* Position it absolutely */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  /* position: absolute; */
+  border: 2px solid rgba(183, 172, 129, 0); /* Adjust the width and color of the border */
+  border-radius: 10px; /* Adjust border-radius to control the roundness of the glow */
+  pointer-events: none; /* Make sure it doesn't interfere with mouse events */
+  z-index: -1; /* Ensure the border is behind the text */
+  transition: border-color 0.3s; /* Add smooth transition for the border color */
+  animation: glow 1s infinite alternate;
+
+}
+
+nav ul li a:hover::before {
+  border-color: rgba(0, 247, 255, 0.5); /* Change border color on hover */
+  box-shadow: 0 0 10px 0 rgba(0, 255, 200, 0.5); /* Add a glow effect */
+}
+
+
+        nav{
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
+            height:98px;
+            background-image: linear-gradient(to bottom, rgba(59, 156, 224,0.8), rgba(0, 136, 240,0.8), rgba(0, 110, 247,0.8), rgba(0, 78, 247,0.8), rgba(55, 18, 235,0.8));
+            font-weight: 500;
+            /* margin-left: 35px; */
+            /* transition: .3s; */
+        }
+        nav ul{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+        nav ul li{
+            list-style:none;
+            margin:0 80px;
+
+        }
+        nav ul li a{
+           text-decoration: none;
+           color:#ffffff;
+        }
+        .firstsection{
+            display:flex;
+            justify-content: space-around;
+            position:relative;
+            width: 100%;
+            height:100vh;
+            /* margin:px 0; */
+        }
+
+        .leftsection{
+            /* background-color: rgb(176, 44, 174); */
+            font-size: 2rem;
+            margin:70px 0;
+            width:80%;
+        }
+
+        .firstsection > div{
+            width:30%;
+        }
+
+        .rightsection img{
+            /* width:; */
+            margin:50px 0;
+            display: block; /* Make sure the image behaves as a block element */
+  width: 100%;
+   /* Ensure the image fills the container */
+  /* height: 70vh;  */
+  /* Maintain aspect ratio */
+  border-radius: 80%; /* Ensure the image is also circular */
+        }
+        .rightsection{
+            display: inline-block; /* Ensures the container fits the size of the image */
+            position: relative; 
+        }
+@keyframes glow {
+  from {
+    border-color: rgba(185, 24, 24, 0); /* Initial color of the border */
+    box-shadow: 1 2 10px 3 rgba(255, 255, 255, 0.5); /* Initial shadow color and size */
+  }
+  to {
+    border-color: rgba(255, 255, 255, 0.5); /* Final color of the border */
+    box-shadow: 0 0 20px 10px rgba(210, 31, 150, 0.5); /* Final shadow color and size */
+  }
+}
+        .red{
+            /* text-decoration: underline; */
+            color: aqua;
+            text-shadow: -2px 2px 5px #ffffff;
+            
+        }
+        #element{
+            color:aqua;
+            text-shadow:-2px 2px 5px #ffffff;
+        }
+
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height:110vh;
+        }
+    .secondsection h1{
+        font-size: 1.5rem;
+        
+    }
+    .text-grey{
+        color: rgb(240, 212, 212);
+    }
+    .secondsection .box{
+        background-color:rgb(240, 212, 212);
+    /* width: 125vh; */
+        height: 10px;
+        margin:56px 0;
+        display: flex;
+    }
+    .secondsection .vertical{
+        height:93px;
+        width:1px;
+        background-color:rgb(240, 212, 212);
+        margin:0 100px;
+
+    }
+
+    .image-top{
+       width:60px;
+       position: relative;
+       top:-45px;
+       left:-12px;
+    }
+    .vertical-title{
+        position: relative;
+        top:49px;
+        width:150px;
+
+    }
+    .vertical-desc{
+        position:relative;
+        color:aqua;
+        top:86px;
+        width:150px;
+        font-size:10px;
+
+    }
+    footer{
+        /* background-color: blue; */
+        /* height:233px; */
+        background-image: linear-gradient(to bottom, rgba(59, 156, 224,0.8), rgba(0, 136, 240,0.8), rgba(0, 110, 247,0.8), rgba(0, 78, 247,0.8), rgba(55, 18, 235,0.8));
+    }
+    .footer{
+        display:flex;
+        padding:23px 122px;
+        justify-content: space-evenly;
+    }
+    .footer ul{
+        list-style: none;
+    }
+    .footer>div{
+        width: 123px;
+    }
+    .glow-footer {
+  background-color: #333; /* Set the background color of the footer */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align the content */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Add glow effect using box-shadow */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><img src="WhatsApp Image 2024-03-25 at 00.36.44.jpeg"alt="" width="90" ></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="firstsection">
+                <div class="leftsection">Hi ,  I am <span class="red">Anushka</span> 
+                    <div>And I am a </div>
+                    <div>passionate programmer</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightsection">
+                    <img src="women-web-developer-with-laptop.png" alt="">
+                </div>
+            </section>
+            <section class="secondsection">
+                <span class="text-grey">Work I have done so far</span>
+                <h1>Work Experience</h1>
+                <div class="box">
+                    <div class="vertical">
+                        <img src="man-developing-website-on-desk.png" alt="" class="image-top">
+                        <div class="vertical-title">HTML Developer(Since January)</div>
+                        <div class="vertical-desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quaerat.</p></div>
+                    </div>
+                    <div class="vertical">
+                        <img src="man-developing-website-on-desk.png" alt="" class="image-top">
+                        <dev class="vertical-title">CSS (since 1970)</dev>
+                        <dev class="vertical-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p></dev>
+                    </div>
+                    <div class="vertical">
+                        <img src="man-developing-website-on-desk.png" alt="" class="image-top">
+                        <div class="vertical-title">DSA(since 2 months)</div>
+                        <div class="vertical-desc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, at.</p></div>
+                    </div>
+                    <div class="vertical">
+                        <img src="man-developing-website-on-desk.png" alt="" class="image-top">
+                        <div class="vertical-title">Human(Since birth)</div>
+                        <div class="vertical-desc"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, esse!</p></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="glow-footer">
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Anushka's Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-rights">
+                www.anushkaportfolio.com|All rights reserved
+            </div>
+        </footer>
+    </header>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['A Learner.', 'A coder.','A person'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
